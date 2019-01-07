@@ -162,5 +162,14 @@ function uniqueNonce() {
 let unique_nonce_entropy = null
 // for(let i=1; i < 10; i++) key.uniqueNonce()
 
-const toLongObj = o => (o ? Long.isLong(o) ? o : Long.fromString(o) : o)
+function toLongObj(o){
+    if (Long.isLong(o)){
+        return 0;
+    } else if(typeof o == 'number'){
+        return Long.fromNumber(o);
+    } else {
+        return Long.fromString(o);
+    }
+}
+
 const toBinaryBuffer = o => (o ? Buffer.isBuffer(o) ? o : new Buffer(o, 'binary') : o)
