@@ -1,5 +1,5 @@
 {
-  "name": "eosjs-ecc",
+  "name": "eosjs-ecc-eva",
   "version": "4.0.4",
   "description": "Elliptic curve cryptography functions",
   "keywords": "ECC, Private Key, Public Key, Signature, AES, Encryption, Decryption",
